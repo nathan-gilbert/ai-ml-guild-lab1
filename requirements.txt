@@ -6,6 +6,7 @@ attrs==20.3.0
 backcall==0.2.0
 bleach==3.2.1
 cffi==1.14.3
+click==7.1.2
 decorator==4.4.2
 defusedxml==0.6.0
 entrypoints==0.3
@@ -16,6 +17,7 @@ ipywidgets==7.5.1
 isort==5.6.4
 jedi==0.17.2
 Jinja2==2.11.2
+joblib==0.17.0
 jsonschema==3.2.0
 jupyter==1.0.0
 jupyter-client==6.1.7
@@ -30,6 +32,7 @@ nbclient==0.5.1
 nbconvert==6.0.7
 nbformat==5.0.8
 nest-asyncio==1.4.2
+nltk==3.5
 notebook==6.1.5
 packaging==20.4
 pandocfilters==1.4.3
@@ -48,12 +51,14 @@ python-dateutil==2.8.1
 pyzmq==19.0.2
 qtconsole==4.7.7
 QtPy==1.9.0
+regex==2020.10.28
 Send2Trash==1.5.0
 six==1.15.0
 terminado==0.9.1
 testpath==0.4.4
 toml==0.10.2
 tornado==6.1
+tqdm==4.51.0
 traitlets==5.0.5
 wcwidth==0.2.5
 webencodings==0.5.1
