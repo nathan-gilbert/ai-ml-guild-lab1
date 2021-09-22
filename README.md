@@ -9,9 +9,14 @@ Install Python if necessary, follow the steps for your OS.
 <https://www.python.org>
 
 * Start the virtual environment: `source venv/bin/activate`
-  * Note: this activate file is shell specific, you may need to start the one 
+  * Note: the `activate` script is shell specific, you may need to start the one 
   for your shell, e.g., `activate.ps1`, `activate.csh`, `activate.fish`
 * Install the required packages: `pip install -r requirements.txt`
+* Install the NLTK Data:
+  * Run python interpreter shell: `python`
+  * In the shell: 
+    * `import nltk`
+    * `nltk.download("all")`
 * Start the Jupyter notebook: `jupyter notebook`
 
 This should open the Lab1 notebook in your browser.
