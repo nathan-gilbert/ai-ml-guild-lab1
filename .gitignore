@@ -129,3 +129,8 @@ dmypy.json
 .pyre/
 
 .idea/
+notes/lab1.aux
+notes/lab1.fdb_latexmk
+notes/lab1.fls
+notes/lab1.out
+notes/lab1.synctex.gz
