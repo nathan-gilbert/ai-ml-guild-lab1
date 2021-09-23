@@ -30,12 +30,12 @@ Basic Bayesian Statistics
 \begin{itemize}
     \item Conditional Probability: The probability of observing some event, $X$,
         given that another event, $Y$ has already been observed. Denoted: $P(X \mid Y)$
+    \item Prior probability: A probability distribution, $P(X)$, that expresses one's
+        belief in an outcome before any evidence is collected.
     \item Posterior probability: The probability of an event after all the
         predictor information has been incorporated. Posterior probabilities
         reflect the uncertainty of assessing an observation to particular class.
-        \[ P(\theta \mid X) = \frac{P(X \mid \theta)P(\theta)}{p(X)} \]
-    \item Prior probability: A probability distribution that expresses one's
-        belief in an outcome before any evidence is collected.
+        \[ P(\theta \mid X) = \frac{P(X \mid \theta)P(\theta)}{P(X)} \]
 \end{itemize}
 
 \subsection{Bayes Theorem}
@@ -56,11 +56,21 @@ $P(X)$ is the probability of $X$ given all possible $\theta$.
 
 Exact Bayesian Classification is often impractical, getting the \emph{true}
 value of the likelihood may be intractable or impossible to acquire. The
-likelihood is defined as $P(X_1,X_2,\dots,X_j \mid \theta)$.
+likelihood is defined as $P(x_1, x_2, \dots, x_j \mid \theta)$.
 
 We therefore must approximate $P(X \mid \theta)$ by calculating the product of the
-individual conditional probabilities: $P(X_1 \mid \theta)*P(X_2 \mid
-\theta)*\dots*P(X_j \mid \theta)$
+individual conditional probabilities: $P(x_1 \mid \theta)*P(x_2 \mid
+\theta)*\dots*P(x_j \mid \theta)$
+
+$P(X)$ is the same for all values, so we don't even need to calculate it, we can
+ignore it.
+
+We end up with an approximation of the value we want $P(\theta \mid X)$:
+
+\[
+    P(\theta \mid X) \propto P(X \mid \theta)*P(\theta) = P(\theta)*P(x_1 \mid \theta)*P(x_2 \mid \theta)*\dots*P(x_j \mid \theta)
+\]
+
 
 Classificaiton then becomes assigning the label with the highest likelihood
 value for a given observation.
